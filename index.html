@@ -6,6 +6,27 @@
     <title>PartyPlanner</title>
 </head>
 <body>
+    <form id="partyForm" method="POST">
+        <input
+          type="text"
+          name="partyName"
+          id="partyName"
+          placeholder="Party Name"
+          required
+        />
+        <input name = "partDate" type="date" id="partyDate" required />
+        <input name = "partyTime" type="time" id="partyTime" required />
+        <input name = "partyLocation" type="text" id="partyLocation" placeholder="Location required" />
+        <textarea
+          name="partyDescription"
+          id="partyDescription"
+          placeholder="Party Description"
+          cols="5"
+          rows="5"
+          required
+        ></textarea>
+        <button type="submit">Schedule Party</button>
+      </form>
     <div id="cards"></div>
     <script src="index.js"></script> 
 </body>
